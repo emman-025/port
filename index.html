@@ -4,159 +4,34 @@
   <meta charset="UTF-8">
   <title>Emmanuel Okafor | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      min-height: 100vh;
-      font-family: 'Inter', Arial, sans-serif;
-      color: #222;
-      background: linear-gradient(120deg, #f5f7fa 0%, #e9ecf4 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .header {
-      width: 100%;
-      padding: 36px 0 16px 0;
-      text-align: center;
-      background: transparent;
-    }
-    .header-title {
-      font-size: 2.7em;
-      font-weight: 700;
-      letter-spacing: -2px;
-      color: #232946;
-      margin-bottom: 0.15em;
-    }
-    .header-sub {
-      font-size: 1.16em;
-      color: #555;
-      font-weight: 500;
-      margin-bottom: 0.5em;
-    }
-    .profile-pic {
-      display: block;
-      margin: 32px auto 24px auto;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 6px 32px rgba(36,38,77,0.13);
-      background: #fff;
-    }
-    .container {
-      max-width: 620px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 24px;
-      text-align: center;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .about {
-      font-size: 1.18em;
-      line-height: 1.8;
-      margin-bottom: 2.2em;
-      color: #444;
-      font-weight: 400;
-      letter-spacing: 0.01em;
-      background: transparent;
-      max-width: 520px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 1.3em;
-      margin-top: 0.2em;
-    }
-    .links a {
-      text-decoration: none;
-      color: #fff;
-      background: #232946;
-      padding: 0.7em 1.7em;
-      border-radius: 100px;
-      font-size: 1.07em;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      box-shadow: 0 2px 12px rgba(36,38,77,0.10);
-      transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
-      display: flex;
-      align-items: center;
-      gap: 0.6em;
-      border: none;
-    }
-    .links a.cv {
-      background: #27ae60;
-    }
-    .links a.linkedin {
-      background: #0077b5;
-    }
-    .links a:hover {
-      background: #111;
-      transform: translateY(-2px) scale(1.03);
-      box-shadow: 0 8px 24px rgba(36,38,77,0.15);
-    }
-    .icon {
-      display: inline-block;
-      font-size: 1.18em;
-      vertical-align: middle;
-    }
-    .footer {
-      width: 100%;
-      text-align: center;
-      color: #aaa;
-      font-size: 1em;
-      padding: 32px 0 22px 0;
-      background: transparent;
-      letter-spacing: 0.03em;
-    }
-    @media (max-width: 700px) {
-      .header-title { font-size: 2em;}
-      .profile-pic { width: 85px; height: 85px;}
-      .container { padding: 0 5vw;}
-      .about { font-size: 1em;}
-      .links { flex-direction: column; gap: 0.9em;}
-    }
-  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="header">
-    <div class="header-title">Emmanuel Okafor</div>
-    <div class="header-sub">3rd Year Computing for Business Student, DCU</div>
-  </div>
-  <div class="container">
-    <img src="IMG_3222.jpeg" alt="Emmanuel Okafor" class="profile-pic">
-    <div class="about">
+<body class="bg-light">
+  <header class="py-4 text-center bg-white shadow-sm mb-4">
+    <h1 class="fw-bold mb-2">Emmanuel Okafor</h1>
+    <h2 class="text-secondary mb-0">3rd Year Computing for Business Student, DCU</h2>
+  </header>
+  <main class="container text-center">
+    <img src="IMG_3222.jpeg" class="rounded-circle shadow-lg mb-4" width="160" alt="Emmanuel Okafor">
+    <p class="lead mx-auto" style="max-width: 600px;">
       Friendly and driven individual currently pursuing a degree in Computing for Business at Dublin City University. Experienced through coursework in Python programming, web development, and database design. Strong interests in product and project management along with programming and software testing. Quick to learn new technologies and always eager to grow professionally.
-    </div>
-    <div class="links">
-      <a class="cv" href="cv.pdf" target="_blank">
-        <span class="icon">
-          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M4 1.5A1.5 1.5 0 0 0 2.5 3v10A1.5 1.5 0 0 0 4 14.5h8a1.5 1.5 0 0 0 1.5-1.5V3A1.5 1.5 0 0 0 12 1.5H4zm0 1h8A.5.5 0 0 1 12.5 3v10a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V3A.5.5 0 0 1 4 2.5zm1 3.5a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5z"></path></svg>
-        </span>
+    </p>
+    <div class="d-flex justify-content-center gap-3 mb-5">
+      <a href="MAIN CV 2.pdf" class="btn btn-success btn-lg d-flex align-items-center" target="_blank">
+        <!-- Download Icon SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="me-2" viewBox="0 0 16 16"><path d="M.5 9.9v3.6a1 1 0 001 1h13a1 1 0 001-1V9.9a.5.5 0 011 0v3.6A2 2 0 0114.5 16h-13A2 2 0 01-.5 13.5V9.9a.5.5 0 011 0zm7.5-.6V1.5a.5.5 0 011 0v7.8l2.15-2.15a.5.5 0 11.7.7l-3 3a.5.5 0 01-.7 0l-3-3a.5.5 0 01.7-.7L8 9.3z"/></svg>
         Download CV
       </a>
-      <a class="linkedin" href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank">
-        <span class="icon">
-          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M2.75 2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zm-.5 3.25h1V13h-1V6zm3 0h1v1.01h.02c.14-.26.5-.52 1.03-.52 1.1 0 1.45.72 1.45 1.66V13h-1v-3.48c0-.83-.02-1.9-1.15-1.9-1.15 0-1.33.9-1.33 1.84V13h-1V6zm7.25 0c-.2 0-.35.15-.35.34v6.32c0 .19.15.34.35.34h.3c.19 0 .34-.15.34-.34V6.34a.34.34 0 0 0-.34-.34h-.3z"></path></svg>
-        </span>
+      <a href="https://www.linkedin.com/in/emmanokafor" class="btn btn-primary btn-lg d-flex align-items-center" target="_blank">
+        <!-- LinkedIn Icon SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="me-2" viewBox="0 0 16 16"><path d="M3.94 6.5H6V12H3.94V6.5zm1.03-2.25a1.03 1.03 0 110-2.06 1.03 1.03 0 010 2.06zM7.5 12V8.72c0-.2.03-.39.09-.58a1.11 1.11 0 012.12 0c.06.19.09.38.09.58V12H9.03V8.8c0-.3-.05-.58-.15-.83a.67.67 0 00-1.26 0c-.1.25-.15.53-.15.83V12H7.5zm5.94-5.5H12V12h1.44V6.5z"/></svg>
         LinkedIn
       </a>
     </div>
-  </div>
-  <div class="footer">
+  </main>
+  <footer class="text-center text-muted py-4 bg-white shadow-sm mt-auto">
     &copy; 2025 Emmanuel Okafor &middot; Dublin City University
-  </div>
+  </footer>
 </body>
 </html>
